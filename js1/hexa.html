@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<style>
+    #hex{
+        text-align:center;
+        margin-top: 350px;
+    }
+
+    .hs{
+        text-align: center;
+        text-decoration: wavy;
+    }
+</style>
+</head>
+<body>
+<marquee scrollamount="20"><h1 class="hs">Hex Colour Generator</h1></marquee>
+<div id="hex"><h1 id="h">#FFFFFF</h1>
+<button onclick="generateColor()">Generate Color</button>
+</div>
+<script>    
+function generateColor() {
+    var hexColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = hexColor;
+    document.getElementById("h").innerText=hexColor;
+}
+</script>
+
+</body>
+</html>

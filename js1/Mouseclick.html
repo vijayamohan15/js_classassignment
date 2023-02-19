@@ -1,0 +1,61 @@
+<!-- <html>
+<head>
+	<title>javascript
+</title>
+<style type="text/css">
+	h2 {
+    text-align: center;
+    font-size: 30px;
+	}
+	#getImage img {
+    width: 300px;
+    height: auto;  
+    border: 4px solid #a1a1a1;  
+	}
+	div {
+    text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<h2>Click to see onclick effect</h2>
+		<img src="imgs/monkeyhear.png" onclick="imagefun()" id="getImage">
+    	
+    </div>
+    <script>
+        function imagefun() {
+            var img = document.getElementById('getImage');
+            if (img.src.match("monkeyhear.png")) {
+                img.src = "imgs/monkeyeye-removebg-preview.png";
+            }
+            else {
+                img.src = "imgs/monkeyhear.png";
+            }
+        }        
+    </script>
+
+</body>
+</html> -->
+
+<html>
+    <head>
+        <title>javascript</title>
+        <!-- <style>
+            img{
+                width:50px;
+                heigth:50px;
+            }
+        </style> -->
+    </head>
+    <body>
+        <img src="imgs/monkeyeye-removebg-preview.png" id="getimg">
+        <script>
+            var image=document.querySelector('#getimg');
+            image.addEventListener('click',function(){
+                image.src='imgs/monkeyhear.png'
+            });
+        </script>
+        
+    </body>
+</html>
